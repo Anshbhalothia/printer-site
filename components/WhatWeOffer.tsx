@@ -24,7 +24,7 @@ export function WhatWeOffer() {
 
         <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-xl bg-white">
           <img
-            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1000&q=80"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP5WiH7NgiAa0hpoAzmFjUIZ3kElrrPBcFazGLG2G19A&s=10"
             alt="Office staff receiving technical printer consultation"
             className="w-full h-80 object-cover"
           />

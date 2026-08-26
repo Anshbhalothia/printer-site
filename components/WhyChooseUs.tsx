@@ -1,5 +1,6 @@
 import React from 'react';
 import { CheckCircle2, Award, Clock, FileText, UserCheck } from 'lucide-react';
+import Link from 'next/link';
 export function WhyChooseUs() {
   const reasons = [
     { icon: Clock, title: "Predictable Scheduling", desc: "Set exact dispatch appointments aligned with your office shift hours." },
@@ -32,15 +33,18 @@ export function WhyChooseUs() {
             ))}
           </div>
           <div className="pt-2">
-            <button className="bg-slate-950 hover:bg-slate-800 text-white font-semibold text-sm px-6 py-3 rounded-xl transition">
-              Book Urgent Service
-            </button>
+            <Link
+  href="/book-appointment"
+  className="inline-block bg-slate-950 hover:bg-slate-800 text-white font-semibold text-sm px-6 py-3 rounded-xl transition cursor-pointer text-center"
+>
+  Book Urgent Service
+</Link>
           </div>
         </div>
 
         <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-xl bg-white">
           <img
-            src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1000&q=80"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkTLJzC7s6dr7CQpR6Qm_DOWYGJ0NWHSiEuJhNJG4XFg&s=10"
             alt="Hardware diagnostic technician working on internal printer parts"
             className="w-full h-80 object-cover"
           />

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Printer, PhoneCall } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Navbar() {
   return (
@@ -20,9 +21,12 @@ export default function Navbar() {
             <PhoneCall className="w-4 h-4 text-cyan-400" />
             <span className="font-semibold text-sm">+1 (800) 555-0199</span>
           </a>
-          <button className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-medium text-sm px-5 py-2.5 rounded-full shadow-lg shadow-cyan-500/25 transition">
-            Book Tech
-          </button>
+          <Link
+  href="/book-appointment"
+  className="inline-flex items-center justify-center bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-medium text-sm px-5 py-2.5 rounded-full shadow-lg shadow-cyan-500/25 transition cursor-pointer"
+>
+  Book Tech
+</Link>
         </div>
       </div>
     </header>

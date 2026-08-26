@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { Zap, ShieldCheck, Wrench, Coins, Calendar, PhoneCall, Printer } from 'lucide-react';
 
 export default function Hero() {
@@ -48,16 +49,22 @@ export default function Hero() {
 
           {/* Call-to-action buttons styled directly on the poster */}
           <div className="flex flex-wrap items-center gap-4 pt-2">
-            <button className="flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs sm:text-sm uppercase tracking-wider px-7 py-3.5 rounded-md shadow-lg shadow-blue-600/40 transition-all duration-200 hover:scale-[1.02]">
-              <Calendar className="w-4 h-4" /> Schedule A Service
-            </button>
-            <a
-              href="tel:+18005550199"
-              className="flex items-center gap-2 bg-slate-900/80 hover:bg-slate-800 text-white border border-slate-700/80 text-xs sm:text-sm uppercase tracking-wider font-semibold px-6 py-3.5 rounded-md backdrop-blur-sm transition"
-            >
-              <PhoneCall className="w-4 h-4 text-cyan-400" /> Fast Response
-            </a>
-          </div>
+  <Link
+    href="/book-appointment"
+    className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs sm:text-sm uppercase tracking-wider px-7 py-3.5 rounded-md shadow-lg shadow-blue-600/40 transition-all duration-200 hover:scale-[1.02] cursor-pointer"
+  >
+    <Calendar className="w-4 h-4 shrink-0 text-white" />
+    <span>Schedule A Service</span>
+  </Link>
+
+  <a
+    href="tel:+18773230888"
+    className="inline-flex items-center gap-2 bg-slate-900/80 hover:bg-slate-800 text-white border border-slate-700/80 text-xs sm:text-sm uppercase tracking-wider font-semibold px-6 py-3.5 rounded-md backdrop-blur-sm transition"
+  >
+    <PhoneCall className="w-4 h-4 text-cyan-400 shrink-0" />
+    <span>Fast Response</span>
+  </a>
+</div>
         </div>
       </div>
 
